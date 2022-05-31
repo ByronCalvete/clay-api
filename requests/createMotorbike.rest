@@ -1,0 +1,35 @@
+POST http://localhost:3001/api/motorbikes 
+Content-Type: application/json
+
+{
+  "name": "Nuevo Usuario",
+  "active": true,
+  "phone": "44 4444 4444",
+  "price": "ARS $280",
+  "role": "Fijo",
+  "licensePlate": "G654JWL"
+}
+
+### without active
+POST http://localhost:3001/api/motorbikes 
+Content-Type: application/json
+
+{
+  "name": "Nuevo Usuario sin active",
+  "phone": "44 4444 4444",
+  "price": "ARS $280",
+  "role": "Fijo",
+  "licensePlate": "G654JWL"
+}
+
+### without name
+POST http://localhost:3001/api/motorbikes 
+Content-Type: application/json
+
+{
+  "active": true,
+  "phone": "44 4444 4444",
+  "price": "ARS $280",
+  "role": "Fijo",
+  "licensePlate": "G654JWL"
+}
